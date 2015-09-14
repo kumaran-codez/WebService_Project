@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://WebService/" xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="add" nillable="true" type="tns:add"/>
+
+  <xs:element name="addResponse" nillable="true" type="tns:addResponse"/>
+
+  <xs:element name="divideL" nillable="true" type="tns:divideL"/>
+
+  <xs:element name="divideLResponse" nillable="true" type="tns:divideLResponse"/>
+
+  <xs:element name="divideR" nillable="true" type="tns:divideR"/>
+
+  <xs:element name="divideRResponse" nillable="true" type="tns:divideRResponse"/>
+
+  <xs:element name="multiply" nillable="true" type="tns:multiply"/>
+
+  <xs:element name="multiplyResponse" nillable="true" type="tns:multiplyResponse"/>
+
+  <xs:element name="subtract" nillable="true" type="tns:subtract"/>
+
+  <xs:element name="subtractResponse" nillable="true" type="tns:subtractResponse"/>
+
+  <xs:complexType name="divideR">
+    <xs:sequence>
+      <xs:element name="a" type="xs:string" minOccurs="0"/>
+      <xs:element name="b" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="divideRResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subtract">
+    <xs:sequence>
+      <xs:element name="a" type="xs:string" minOccurs="0"/>
+      <xs:element name="b" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subtractResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="add">
+    <xs:sequence>
+      <xs:element name="a" type="xs:string" minOccurs="0"/>
+      <xs:element name="b" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="divideL">
+    <xs:sequence>
+      <xs:element name="a" type="xs:string" minOccurs="0"/>
+      <xs:element name="b" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="divideLResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multiply">
+    <xs:sequence>
+      <xs:element name="a" type="xs:string" minOccurs="0"/>
+      <xs:element name="b" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multiplyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
